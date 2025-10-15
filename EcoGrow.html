@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGrow - Pupuk Organik dari Ampas Kopi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #065f46 0%, #10b981 50%, #34d399 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pulse-green {
+            animation: pulse-green 2s infinite;
+        }
+        
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-2">
+                        <img src="./image/Logo.png" alt="EcoGrow Logo" class="w-24 h-24 rounded-full object-cover">
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-green-600 transition-colors">Beranda</a>
+                    <a href="#produk" class="text-gray-700 hover:text-green-600 transition-colors">Produk</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-green-600 transition-colors">Tentang Kami</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-green-600 transition-colors">Kontak</a>
+                </div>
+                
+                <button class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors pulse-green">
+                    Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-gradient text-white pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center min-h-96">
+                <div class="fade-in">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Pupuk Organik dari 
+                        <span class="text-yellow-300">Ampas Kopi</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-green-100">
+                        Mengubah limbah ampas kopi menjadi nutrisi terbaik untuk tanaman Anda. 
+                        Ramah lingkungan, berkualitas tinggi, dan mendukung pertanian berkelanjutan.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-green-800 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition-colors">
+                            Lihat Produk Kami
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-800 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="w-full h-96 rounded-3xl flex items-center justify-center text-8xl">
+                        </div>
+                        <img src="./image/Logo.png" alt="EcoGrow Logo" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-3xl">
+                            ♻️
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Mengapa Memilih EcoGrow?</h2>
+                <p class="text-xl text-gray-600">Keunggulan pupuk organik dari ampas kopi kami</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                        🌿
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">100% Organik</h3>
+                    <p class="text-gray-600">Terbuat dari ampas kopi murni tanpa bahan kimia berbahaya. Aman untuk tanaman dan lingkungan.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                        💪
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Nutrisi Lengkap</h3>
+                    <p class="text-gray-600">Kaya nitrogen, fosfor, dan kalium. Mengandung mikronutrient penting untuk pertumbuhan optimal.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                        🌍
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Ramah Lingkungan</h3>
+                    <p class="text-gray-600">Mengurangi limbah ampas kopi dan mendukung ekonomi sirkular untuk masa depan yang berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Produk Kami</h2>
+                <p class="text-xl text-gray-600">Pilihan pupuk organik berkualitas untuk berbagai kebutuhan</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-6xl">
+                        🌱
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">EcoGrow Basic</h3>
+                        <p class="text-gray-600 mb-4">Pupuk dasar untuk tanaman hias dan sayuran. Kemasan 1kg.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-green-600">Rp 25.000</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border-2 border-green-500">
+                    <div class="bg-green-500 text-white text-center py-2 font-semibold">TERLARIS</div>
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-6xl">
+                        🌿
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">EcoGrow Premium</h3>
+                        <p class="text-gray-600 mb-4">Formula khusus dengan nutrisi tambahan. Kemasan 2kg.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-green-600">Rp 45.000</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center text-6xl">
+                        🌳
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">EcoGrow Pro</h3>
+                        <p class="text-gray-600 mb-4">Untuk pertanian skala besar. Kemasan 5kg.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-green-600">Rp 100.000</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Tentang EcoGrow</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        EcoGrow lahir dari kepedulian terhadap lingkungan dan keinginan untuk menciptakan solusi berkelanjutan. 
+                        Kami mengubah limbah ampas kopi dari kedai-kedai kopi menjadi pupuk organik berkualitas tinggi.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Dengan proses fermentasi khusus, ampas kopi diolah menjadi pupuk yang kaya nutrisi dan ramah lingkungan. 
+                        Setiap pembelian Anda berkontribusi pada pengurangan limbah dan mendukung pertanian berkelanjutan.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600">500+</div>
+                            <div class="text-gray-600">Pelanggan Puas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600">2 Ton</div>
+                            <div class="text-gray-600">Ampas Kopi Diolah</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-green-100 to-green-200 rounded-3xl flex items-center justify-center text-8xl">
+                        ♻️🌱
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-600">Siap melayani kebutuhan pupuk organik Anda</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">
+                                📱
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">WhatsApp</h3>
+                                <p class="text-gray-600">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">
+                                📧
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Email</h3>
+                                <p class="text-gray-600">info@ecogrow.co.id</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">
+                                📍
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Alamat</h3>
+                                <p class="text-gray-600">Jl. Pakuan, RT.02/RW.06, Tegallega, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16129</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <form class="space-y-6" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="nama@email.com" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">🌱</span>
+                        </div>
+                        <span class="text-xl font-bold">EcoGrow</span>
+                    </div>
+                    <p class="text-green-200">Pupuk organik berkualitas dari ampas kopi untuk masa depan yang berkelanjutan.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Produk</h3>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#" class="hover:text-white transition-colors">EcoGrow Basic</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">EcoGrow Premium</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">EcoGrow Pro</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Karir</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">📘</a>
+                        <a href="#" class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">📷</a>
+                        <a href="#" class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">🐦</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+                <p>&copy; 2024 EcoGrow. Semua hak dilindungi undang-undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = event.target.querySelector('input[type="text"]').value;
+            const email = event.target.querySelector('input[type="email"]').value;
+            const message = event.target.querySelector('textarea').value;
+            
+            // Show success message
+            const button = event.target.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            
+            button.textContent = 'Mengirim...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.textContent = 'Pesan Terkirim! ✓';
+                button.classList.remove('bg-green-600', 'hover:bg-green-700');
+                button.classList.add('bg-green-500');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    button.classList.remove('bg-green-500');
+                    button.classList.add('bg-green-600', 'hover:bg-green-700');
+                    event.target.reset();
+                }, 2000);
+            }, 1000);
+        }
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Product order buttons
+        document.querySelectorAll('button:contains("Pesan")').forEach(button => {
+            if (button.textContent.includes('Pesan')) {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.card-hover').querySelector('h3').textContent;
+                    const price = this.closest('.card-hover').querySelector('.text-3xl').textContent;
+                    
+                    const originalText = this.textContent;
+                    this.textContent = 'Ditambahkan! ✓';
+                    this.classList.remove('bg-green-600', 'hover:bg-green-700');
+                    this.classList.add('bg-green-500');
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.classList.remove('bg-green-500');
+                        this.classList.add('bg-green-600', 'hover:bg-green-700');
+                    }, 1500);
+                });
+            }
+        });
+
+        // Main CTA buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Pesan Sekarang') || 
+                button.textContent.includes('Lihat Produk') || 
+                button.textContent.includes('Pelajari Lebih Lanjut')) {
+                button.addEventListener('click', function() {
+                    if (this.textContent.includes('Lihat Produk')) {
+                        document.querySelector('#produk').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    } else if (this.textContent.includes('Pelajari Lebih Lanjut')) {
+                        document.querySelector('#tentang').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    } else if (this.textContent.includes('Pesan Sekarang')) {
+                        document.querySelector('#kontak').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98f050dac17d4ac1',t:'MTc2MDU0MTc4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
